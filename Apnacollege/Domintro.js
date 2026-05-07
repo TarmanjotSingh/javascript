@@ -36,3 +36,29 @@
 // of a web page dynamically using JavaScript.
 //  With the DOM, you can access and modify elements, attributes,
 //  and text on a web page, as well as respond to user interactions such as clicks and keyboard events.
+
+//window object de andr ek hor object hundi a document nam di
+//document object represents the web page and provides methods and properties to access and manipulate the elements of the page
+//document is model or representation of the web page or html in the browser,and we call it dom
+
+//console.log vs console.dir
+//console.log() is used to log a message to the console, while console.dir() is used to display an interactive list of the properties of a specified JavaScript object.
+// When you use console.log() to log an object, it will display the object as a string representation. 
+// However, when you use console.dir() to log an object, it will display the object as an interactive list of its properties and values, 
+// allowing you to explore the object's structure and contents in more detail.
+
+//dom tree ,search google for dom tree
+//all the elements in the html document are represented as nodes(or called nodes) in the dom tree
+//The DOM tree is a hierarchical representation of the elements in an HTML document.
+
+                //accessing or selecting elements
+//phla trika - by using their id
+//appa html ch elements nu id de skde a
+//id den lyi appa # use krde a # id da symbol hunda
+//example h1 in css ch appa #heading likh skde a
+
+
+// example
+let heading = document.getElementById("heading"); 
+console.log(heading); // <h1 id="heading">Hello World</h1>
+console.dir(heading); // will show the properties of the element in the console
