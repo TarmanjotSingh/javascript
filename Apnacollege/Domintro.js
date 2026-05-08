@@ -62,3 +62,20 @@
 let heading = document.getElementById("heading"); 
 console.log(heading); // <h1 id="heading">Hello World</h1>
 console.dir(heading); // will show the properties of the element in the console
+
+//jdo koi id html ch nhi te appa
+//print krwayia null aayega
+//pr jdo appa koi class jo nhi hegi
+//print krwayia ta empty html collection aayega
+
+//example ,calling a class
+let heading2 = document.getElementsByClassName("heading");
+console.log(heading2); // will show an HTMLCollection of all elements with the class "heading"
+console.dir(heading2); // will show the properties of the HTMLCollection in the console
+
+//3rd way using tag name
+let parahs = document.getElementsByTagName("p");
+console.log(parahs);
+console.dir(parahs);
+
+//4th way
