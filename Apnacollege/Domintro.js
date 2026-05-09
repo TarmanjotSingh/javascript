@@ -78,4 +78,30 @@ let parahs = document.getElementsByTagName("p");
 console.log(parahs);
 console.dir(parahs);
 
-//4th way
+//4th way query selector
+
+//document.queryselector("myId/.myClass/tag")
+
+let elements = document.querySelector("")
+//kise element da tagname print kron lyi
+//jive element abc a ta
+// console.log(element.abc.tagName);
+
+ let firstElement = document.querySelector(".myclass");//first element with class myclass
+    console.log(firstElement);
+    console.dir(firstElement);
+let allElements = document.querySelectorAll("myclass");
+
+//all elements with class myclass
+console.log(allElements);
+console.dir(allElements);
+
+//if using id then we use # in query selector
+let ElementbyId = document.querySelector("#myId");
+console.log(ElementbyId);
+console.dir(ElementbyId);
+
+//if using tag name then we use tag name in query selector
+let ElementbyTag = document.querySelector("p");
+console.log(ElementbyTag);
+console.dir(ElementbyTag);
