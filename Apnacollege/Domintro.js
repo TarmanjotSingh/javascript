@@ -105,3 +105,63 @@ console.dir(ElementbyId);
 let ElementbyTag = document.querySelector("p");
 console.log(ElementbyTag);
 console.dir(ElementbyTag);
+
+
+//          properties to get or change values
+
+
+    //tagname - returns tag for element nodes
+    //abcelement.tagname will return the tag name of the abcelement, for example if the element is a paragraph <p>, it will return "P"
+
+    //innerText - returns the text content of
+    //  the element and all its children
+
+    //innerHTML - returns the plain text or HTML contents in th element
+
+    //textContent - returns textual content even for hidden elements
+
+
+    //          parent vs child elements
+
+
+    // jive html ch <body></body> parent a 
+    //and ohde andr likhe jo v <div></div> <p></p> child elements a
+    //parent element is the element that contains other elements, while child elements are the elements that are contained within a parent element. 
+    //For example, in the HTML structure <div><p></p></div>, the <div> element is the parent element and the <p> element is the child element. 
+    //The parent-child relationship can be nested, meaning that a child element can also be a parent element to other child elements.
+
+
+    //sibling nodes - elements that share the same parent element are called sibling nodes. For example, in the HTML structure 
+// <div>   <p></p><span></span>   </div>,
+//  the <p> and <span> elements are sibling nodes because they share the same parent element,
+//  which is the <div> element. Sibling nodes can be accessed using properties such as nextSibling and previousSibling in JavaScript.
+
+
+//console ch j likhiye
+//document.querySelector("div")
+//te ohde andr j elements a oh show krde a
+//pr j likhiye
+//document.querySelector("div").children
+//t ohne html collection deni andr j koi 
+//paragraph ya span hunda te oh show krde a
+
+
+//how to access html in console
+
+
+//ehde nal div access kr rhe a fruits ala html ch
+
+let div  = document.querySelector("div");
+console.log(div);
+console.dir(div);
+
+
+//to Get values
+div.innerText//fruits/napple/nmango/nbanana
+div.innerHTML//<h3>fruits</h3><ul><li>apple</li><li>mango</li><li>banana</li></ul>
+div.textContent//fruits apple mango banana
+//to set values
+div.innerText = "new text";
+div.innerHTML = "<h1>new heading</h1><p>new paragraph</p>";
+div.textContent = "new text content";
+//j kuj hidden a te oh textcontent vich show ho janda but innertext vich nhi show hunda
